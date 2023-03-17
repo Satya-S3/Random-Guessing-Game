@@ -9,7 +9,7 @@ ran=Math.floor((Math.random()*100)+1);
 alert("User guessing Game Let's Started");
 do{
     n=100-i++;
-    user=prompt("Enter a Number between 1-10 "+" You have "+n+" guesses");
+    user=prompt("Enter a Number between 1-100 "+" You have "+n+" guesses");
     if(user>ran)
     {
         alert("Too High!!!!! Try again")
