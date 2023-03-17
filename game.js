@@ -5,12 +5,19 @@
 let ran;
 let user;
 let i=0,n;
+ran=Math.floor((Math.random()*100)+1);
 alert("User guessing Game Let's Started");
 do{
     n=100-i++;
-    ran=Math.floor((Math.random()*10)+1);
     user=prompt("Enter a Number between 1-10 "+" You have "+n+" guesses");
-
+    if(user>ran)
+    {
+        alert("Too High!!!!! Try again")
+    }
+    else if(user<ran)
+    {
+        alert("Too Low!!!!! Try again")
+    }
 }while(user!=ran && n!=0);
 if(n==0)
 {
