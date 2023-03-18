@@ -2,11 +2,13 @@
 
 // Q6 generate random Number and user gusess
 
+
 let ran;
 let user;
 let i=0,n;
 ran=Math.floor((Math.random()*100)+1);
 alert("User guessing Game Let's Started");
+const fun=(a)=>{
 do{
     n=100-i++;
     user=prompt("Enter a Number between 1-100 "+" You have "+n+" guesses");
@@ -25,5 +27,11 @@ if(n==0)
 }
 else{
     alert("Your Score is "+n);
+    let w=confirm("Do you want to play Again");
+    if(w){
+        fun(1);
+    }
 }
+}
+fun(1);
 
